@@ -1,5 +1,5 @@
 
-# generator-azure-node [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-azure-node
 > Yeoman generator for Azure NodeJS projects
 
 ## Installation
