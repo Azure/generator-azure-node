@@ -10,7 +10,7 @@ module.exports = yeoman.Base.extend({
     yeoman.Base.apply(this, arguments);
 
     this.option('projectLanguage', { type: String, required: true, desc: 'language for the project: js or ts' });
-    this.option('projectTemplate', { type: String, required: false, desc: 'template kind: empty, rollup package' });
+    this.option('projectTemplate', { type: String, required: false, desc: 'template kind: empty, azure package' });
     this.option('projectName', { type: String, required: true, desc: 'name for the project' });
     this.option('projectDescription', { type: String, required: true, desc: 'description for the project' });
 

@@ -19,7 +19,7 @@ function createServicePrincipal() {
   var displayName;
 
   var homePage = 'http://' + displayName + ':8080';
-  var identifierUris = [ homePage ];
+  var identifierUris = [homePage];
   var roleId = 'b24988ac-6180-42a0-ab88-20f7382dd24c'; // contributor role
   var scope = '/subscriptions/' + subscriptionId;
   var roleDefinitionId = scope + '/providers/Microsoft.Authorization/roleDefinitions/' + roleId;
@@ -27,7 +27,7 @@ function createServicePrincipal() {
     domain: tenantId
   };
 
-  msrestazure.interactiveLogin(loginOptions, function(err, creds) {
+  msrestazure.interactiveLogin(loginOptions, function (err, creds) {
     if (err) {
       console.log('Error occured in interactive login: \n' + util.inspect(err, { depth: null }));
       return;
