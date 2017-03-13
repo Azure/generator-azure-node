@@ -71,7 +71,7 @@ module.exports = yeoman.Base.extend({
       var generator = this;
 
       if (generator.projectTemplate) {
-        var projectTemplates = ['empty', 'all-up'];
+        var projectTemplates = ['empty', 'azure'];
         if (projectTemplates.indexOf(generator.projectTemplate) !== -1) {
           generator.projectConfig.template = generator.projectTemplate;
         } else {
@@ -90,8 +90,8 @@ module.exports = yeoman.Base.extend({
             value: 'empty'
           },
           {
-            name: 'All up Project',
-            value: 'all-up'
+            name: 'Azure Project',
+            value: 'azure'
           }
         ],
         default: 0
@@ -185,7 +185,7 @@ module.exports = yeoman.Base.extend({
       case 'empty':
         this.template(this.sourceRoot() + '/EmptyPackage.json', context.name + '/package.json', context);
         break;
-      case 'all-up':
+      case 'azure':
         this.template(this.sourceRoot() + '/AllupPackage.json', context.name + '/package.json', context);
         break;
       default:
